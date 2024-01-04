@@ -1,0 +1,55 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.hover-content {
+    display: none;
+    color: #666;
+}
+
+/* Interacción con el Mouse */
+.box:hover .hover-content {
+    display: block;
+}
+
+/* Adaptabilidad del Texto */
+.box p, .box .hover-content {
+    word-wrap: break-word; /* Asegura que el texto no desborde */
+}
+.navbar {
+    background-image: url('logo.gif'); /* Asegúrate de que la ruta de la imagen es correcta */
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #060B30;
+}

@@ -1,0 +1,22 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.navbar {
+    background-image: url('logo.gif');
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #060B30;
+}
+
+
+.pdf-container {
+    width: 100%;
+    height: calc(100% - 100px); /* Altura total menos la altura de la barra de navegación */
+    overflow: auto; /* Permite el desplazamiento si el PDF es más largo que el contenedor */
+}

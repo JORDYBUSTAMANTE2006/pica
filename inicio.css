@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Sofia', cursive;
+}
+
+.box {
+    width: calc(33.333% - 20px); /* Ajusta el ancho para tres casillas por fila, restando el margen */
+    height: 200px; /* Ajusta la altura como prefieras */
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    transition: background-color 0.5s, color 0.5s; /* Transición suave para el cambio de fondo y color del texto */
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Color de fondo al pasar el mouse */
+    color: #333333; /* Color del texto más oscuro */
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+    text-align: center; /* Asegura que el texto esté centrado */
+    width: 100%; /* Hace que el párrafo ocupe todo el ancho de la casilla */
+    transition: background-color 0.5s; /* Transición suave para el cambio de fondo */
+}
+
+.box:hover p {
+    background-color: transparent; /* Cambia el fondo del texto al pasar el mouse */
+}
+
+.navbar {
+    background-image: url('logo.gif');
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #060B30;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: inherit; /* Esto hará que los enlaces usen el color del texto del elemento padre */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+a:hover, a:visited {
+    color: inherit; /* Mantiene el mismo color incluso después de visitar o al pasar el cursor */
+}
